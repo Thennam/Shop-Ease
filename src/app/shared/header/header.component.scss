@@ -1,0 +1,15 @@
+@import "../../../assets/scss/variable.scss";
+
+// Logo design start here
+header {
+  .logo {
+    a {
+      color: $rose;
+      font-size: 30px;
+      font-weight: bold;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

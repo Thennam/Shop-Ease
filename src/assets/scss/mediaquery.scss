@@ -1,0 +1,77 @@
+@import "../scss/variable.scss";
+
+@media only screen and (min-width: $breakpoint-mobile-min) and (max-width: $breakpoint-mobile-max ) {
+  .main-view.mar-bot-20 {
+    margin-bottom: 150px !important;
+  }
+  .product-page {
+    display: unset;
+    .product-list {
+      margin-bottom: 20px;
+    }
+  }
+  .menu-icon {
+    display: block;
+  }
+  .menu-view {
+    display: none;
+  }
+  .showmenu {
+    .menu-view {
+      display: block !important;
+    }
+  }
+  .filter-view {
+    display: unset !important;
+  }
+  .menu li a {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: $breakpoint-tablet-min) and (max-width: $breakpoint-tablet-max) { 
+  .main-view.mar-bot-20 {
+    margin-bottom: 150px !important;
+  }
+  .product-page {
+    display: grid;
+    grid-template-columns: auto auto !important;
+    .product-list {
+      margin-bottom: 20px;
+    }
+  }
+  .menu-icon {
+    display: block;
+  }
+  .menu-view {
+    display: none;
+  }
+  .showmenu {
+    .menu-view {
+      display: block !important;
+    }
+  }
+  .filter-view {
+    display: unset !important;
+  }
+  .menu li a {
+    display: block;
+  }
+
+}
+
+
+
+@media only screen and (min-width: $breakpoint-maxmini-min ) and (max-width: $breakpoint-desktop-max ) {
+  .product-page {
+    display: grid;
+  }
+  .menu-icon {
+    display: none;
+  }
+  .menu-view {
+    display: block;
+  }
+}
+
+

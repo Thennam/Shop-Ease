@@ -1,0 +1,54 @@
+@import "../../../assets/scss/mixins.scss";
+@import "../../../assets/scss/variable.scss";
+
+.menu {
+  li {
+    float: left;
+    margin-right: 1rem;
+    a {
+      @include menu-font;
+      padding: 7px 15px;
+      transition: color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+      &:hover {
+        background: $rose !important;
+        text-decoration: none;
+        color: $white;
+        padding: 7px 15px;
+        border-radius: 4px;
+        transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      }
+    }
+    .menuActive {
+      background: $rose !important;
+      text-decoration: none;
+      color: $white;
+      padding: 7px 15px;
+      border-radius: 4px;
+    }
+  }
+  mat-icon {
+    color: $rose;
+  }
+}
+
+.showmenu {
+  .menu-view {
+    background: $white;
+    position: absolute;
+    width: 50%;
+    right: 0;
+    padding: 10px;
+    height: 83vh;
+    li {
+      float: none;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.theme {
+  position: fixed;
+  top:0px;
+  right: 25px;
+}

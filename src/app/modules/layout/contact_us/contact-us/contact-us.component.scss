@@ -1,0 +1,18 @@
+form {
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  /* Style form fields */
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: none;
+  }
+  

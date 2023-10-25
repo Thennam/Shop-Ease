@@ -1,0 +1,32 @@
+@import "../../../assets/scss/variable.scss";
+@import "../../../assets/scss/mixins.scss";
+
+footer {
+  ul {
+    li {
+      float: left;
+      margin-right: 1rem;
+      a {
+        color: $block;
+        text-decoration: underline;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  p {
+    @include default-font;
+    clear: both;
+  }
+}
+
+.theme {
+  a {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: $rose;
+    font-weight: bold;
+  }
+}

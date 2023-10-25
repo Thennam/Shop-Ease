@@ -1,0 +1,32 @@
+<!-- Footer page  -->
+<footer>
+  <div class="row">
+    <!-- footer navigation -->
+    <nav class="width-100 mar-bot-10">
+      <ul>
+        <li>
+          <a href="javascript:void(0)" (click)="goToInfoClick()"> Privacy Policy </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)" (click)="goToInfoClick()"> Terms of Service </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)" (click)="goToInfoClick()"> FAQ </a>
+        </li>
+      </ul>
+    </nav>
+     <!-- !footer navigation -->
+    <!-- copright -->
+    <p class="mar-bot-0">
+        &#169; 2021 ShopEase, All rights reserved
+    </p>
+     <!-- !copright -->
+  </div>
+</footer>
+
+<!-- Theme design -->
+<div class="theme">
+  <a href="javascript:void(0)" (click)="darkThemeChange()" *ngIf="lighttheme" >Switch to Dark</a>
+  <a href="javascript:void(0)" (click)="lightThemeChange()" *ngIf="darktheme">Switch to Light</a>
+</div>
+<!-- !Theme design -->

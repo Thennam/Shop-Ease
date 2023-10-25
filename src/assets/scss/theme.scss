@@ -1,0 +1,57 @@
+@import "../../assets/scss/variable.scss";
+@import "../../assets/scss/mixins.scss";
+
+// Dark thme Design file
+body.darktheme {
+  .header,
+  .footer {
+    background: $block;
+  }
+  .menu,
+  .footer {
+    ul {
+      li {
+        a {
+          color: $white !important;
+        }
+      }
+    }
+  }
+  .footer {
+    p {
+      color: $white !important;
+    }
+  }
+  .product-list {
+    h2,
+    span {
+      color: $white;
+    }
+    background: $block;
+    img {
+      background: $white;
+    }
+  }
+  .search,
+  .select-box {
+    background: $block;
+    color: $white;
+  }
+  .common-bg,
+  .about-page,
+  .contact-page {
+    background: $block;
+    h1,
+    p,
+    label {
+      color: $white;
+    }
+  }
+  .no-data {
+    background: $block;
+    p,
+    h1 {
+      color: $white;
+    }
+  }
+}

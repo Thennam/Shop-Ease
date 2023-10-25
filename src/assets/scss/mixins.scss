@@ -1,0 +1,63 @@
+// styles
+@import "../scss/variable.scss";
+
+// Mixins
+
+// default font style
+@mixin default-font {
+  font-size: 14px;
+  color: $block;
+  font-family: $roboto;
+  font-weight: normal;
+}
+// font medium
+@mixin font-medium {
+  font-size: 18px;
+  color: $block;
+  font-family: $roboto;
+  font-weight: normal;
+}
+// menu font
+@mixin menu-font {
+  font-size: 16px;
+  color: $block;
+  font-weight: bold;
+  font-family: $roboto;
+}
+// flex center
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+// flex space b/w
+@mixin flex-sb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+// fixed top
+@mixin fixed-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+// default button
+@mixin default-btns {
+  background: $white;
+  border: 0;
+  min-height: 38px;
+  min-width: 90px;
+}
+// button hover
+@mixin btnhover {
+  background: rgb(0, 3, 255) !important;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 3, 255, 1) 0%,
+    rgba(2, 126, 251, 1) 100%
+  );
+  text-transform: uppercase;
+}

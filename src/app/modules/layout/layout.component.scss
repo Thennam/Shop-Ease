@@ -1,0 +1,27 @@
+// import design files 
+@import "../../../assets/scss/variable.scss";
+@import "../../../assets/scss/mixins.scss";
+
+// header styles
+.header {
+  min-height: 55px;
+  padding: 7px 15px;
+  box-shadow: $boxShadow;
+  background: $white;
+  margin-bottom: 10px;
+  @include flex-sb;
+  @include fixed-top;
+  z-index: 999;
+}
+
+// footer styles
+.footer {
+  border-top: 1px solid $border;
+  @include flex-center;
+  background: $white;
+  padding: 5px 15px;
+  position: fixed;
+  bottom: 0;
+  z-index: 99;
+}
+

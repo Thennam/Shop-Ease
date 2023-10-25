@@ -1,0 +1,219 @@
+// Grid System layout
+.width-100,
+.row,
+.container {
+  width: 100%;
+  clear: both;
+}
+.col {
+  float: left;
+  position: relative;
+  // padding-left: 5px;
+  // padding-right: 5px;
+}
+
+// media query for different port view
+// Large screen view
+@media only screen and (min-width: 1280px) and (max-width: 6000px) {
+  // extra large
+  .col-xl-12 {
+    width: 99.96%;
+  }
+  .col-xl-11 {
+    width: 91.63%;
+  }
+  .col-xl-10 {
+    width: 83.33;
+  }
+  .col-xl-9 {
+    width: 74.97%;
+  }
+  .col-xl-8 {
+    width: 66.64%;
+  }
+  .col-xl-7 {
+    width: 58.31%;
+  }
+  .col-xl-6 {
+    width: 49.98%;
+  }
+  .col-xl-5 {
+    width: 41.65%;
+  }
+  .col-xl-4 {
+    width: 33.32%;
+  }
+  .col-xl-3 {
+    width: 24.99%;
+  }
+  .col-xl-2 {
+    width: 16.66%;
+  }
+  .col-xl-1 {
+    width: 8.33%;
+  }
+}
+
+// laptop view
+@media only screen and (min-width: 960px) and (max-width: 1279px) {
+  //  large
+  .col-lg-12 {
+    width: 99.96%;
+  }
+  .col-lg-11 {
+    width: 91.63%;
+  }
+  .col-lg-10 {
+    width: 83.33;
+  }
+  .col-lg-9 {
+    width: 74.97%;
+  }
+  .col-lg-8 {
+    width: 66.64%;
+  }
+  .col-lg-7 {
+    width: 58.31%;
+  }
+  .col-lg-6 {
+    width: 49.98%;
+  }
+  .col-lg-5 {
+    width: 41.65%;
+  }
+  .col-lg-4 {
+    width: 33.32%;
+  }
+  .col-lg-3 {
+    width: 24.99%;
+  }
+  .col-lg-2 {
+    width: 16.66%;
+  }
+  .col-lg-1 {
+    width: 8.33%;
+  }
+}
+// Tablet View
+@media only screen and (min-width: 720px) and (max-width: 959px) {
+  // Medium
+  .col-md-12 {
+    width: 99.96%;
+  }
+  .col-md-11 {
+    width: 91.63%;
+  }
+  .col-md-10 {
+    width: 83.33;
+  }
+  .col-md-9 {
+    width: 74.97%;
+  }
+  .col-md-8 {
+    width: 66.64%;
+  }
+  .col-md-7 {
+    width: 58.31%;
+  }
+  .col-md-6 {
+    width: 49.98%;
+  }
+  .col-md-5 {
+    width: 41.65%;
+  }
+  .col-md-4 {
+    width: 33.32%;
+  }
+  .col-md-3 {
+    width: 24.99%;
+  }
+  .col-md-2 {
+    width: 16.66%;
+  }
+  .col-md-1 {
+    width: 8.33%;
+  }
+}
+
+// Mobile View
+@media only screen and (min-width: 540px) and (max-width: 719px) {
+  // Small
+  .col-sm-12 {
+    width: 99.96%;
+  }
+  .col-sm-11 {
+    width: 91.63%;
+  }
+  .col-sm-10 {
+    width: 83.33;
+  }
+  .col-sm-9 {
+    width: 74.97%;
+  }
+  .col-sm-8 {
+    width: 66.64%;
+  }
+  .col-sm-7 {
+    width: 58.31%;
+  }
+  .col-sm-6 {
+    width: 49.98%;
+  }
+  .col-sm-5 {
+    width: 41.65%;
+  }
+  .col-sm-4 {
+    width: 33.32%;
+  }
+  .col-sm-3 {
+    width: 24.99%;
+  }
+  .col-sm-2 {
+    width: 16.66%;
+  }
+  .col-sm-1 {
+    width: 8.33%;
+  }
+}
+// MObile view
+@media only screen and (min-width: 320px) and (max-width: 539px) {
+  // minimum
+  .col-mm-12 {
+    width: 99.96%;
+  }
+  .col-mm-11 {
+    width: 91.63%;
+  }
+  .col-mm-10 {
+    width: 83.33;
+  }
+  .col-mm-9 {
+    width: 74.97%;
+  }
+  .col-mm-8 {
+    width: 66.64%;
+  }
+  .col-mm-7 {
+    width: 58.31%;
+  }
+  .col-mm-6 {
+    width: 49.98%;
+  }
+  .col-mm-5 {
+    width: 41.65%;
+  }
+  .col-mm-4 {
+    width: 33.32%;
+  }
+  .col-mm-3 {
+    width: 24.99%;
+  }
+  .col-mm-2 {
+    width: 16.66%;
+  }
+  .col-mm-1 {
+    width: 8.33%;
+  }
+}
+
+// !media query for different port view

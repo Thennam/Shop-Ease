@@ -1,0 +1,56 @@
+<!-- Menu page -->
+<div class="menu" [ngClass]="{'showmenu': showMenuView}">
+  <!-- mobile menu -->
+  <a href="javascript:void(0)" class="menu-icon" (click)="showMenu()" *ngIf="!showMenuView">
+    <mat-icon>
+      <span class="material-symbols-outlined"> menu </span>
+    </mat-icon>
+  </a>
+  <a href="javascript:void(0)" class="menu-icon" (click)="showMenu()" *ngIf="showMenuView">
+    <mat-icon>
+      <span class="material-symbols-outlined"> close </span>
+    </mat-icon>
+  </a>
+   <!-- !mobile menu -->
+   
+  <!-- menu navigation -->
+  <nav class="menu-view">
+    <ul>
+      <li>
+        <a
+          (click)="menuEvent('home')"
+          href="javascript:void(0)"
+          [ngClass]="{ menuActive: homeActive }"
+          >Home</a
+        >
+      </li>
+      <li>
+        <a
+          (click)="menuEvent('product')"
+          href="javascript:void(0)"
+          [ngClass]="{ menuActive: productActive }"
+          >Products</a
+        >
+      </li>
+      <li>
+        <a
+          (click)="menuEvent('about')"
+          href="javascript:void(0)"
+          [ngClass]="{ menuActive: aboutActive }"
+          >About Us</a
+        >
+      </li>
+      <li>
+        <a
+          (click)="menuEvent('contact')"
+          href="javascript:void(0)"
+          [ngClass]="{ menuActive: contactActive }"
+          >Contact</a
+        >
+      </li>
+    </ul>
+  </nav>
+    <!-- !menu navigation -->
+</div>
+<!-- Menu page -->
+

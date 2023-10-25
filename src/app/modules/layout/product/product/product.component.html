@@ -1,0 +1,84 @@
+<!-- Product Page  -->
+<div class="container">
+  <div class="row mar-bot-20">
+    <div class="filter-view">
+      <!-- Category select box  -->
+      <div class="fliter col-sm-4 col-mm-4 relative">
+        <select
+          (change)="fliter($event)"
+          [(ngModel)]="categoryText"
+          class="select-box"
+        >
+          <option *ngFor="let item of category">{{ item.item }}</option>
+        </select>
+      </div>
+      <!-- !Category select box  -->
+
+      <!-- Search box  -->
+      <div class="search-box col-xl-4 col-lg-4 col-sm-12 col-mm-12 relative">
+        <input
+          type="text"
+          placeholder="Search..."
+          class="search"
+          name="search"
+          (change)="fliter($event)"
+          [(ngModel)]="searchText"
+          autocomplete="off"
+        />
+        <mat-icon class="search-icon">
+          <span class="material-symbols-outlined"> search </span>
+        </mat-icon>
+      </div>
+      <!-- !Search box  -->
+    </div>
+  </div>
+
+  <!-- Product List  -->
+  <div class="row product-page">
+    <div
+      class="product-list col col-lg-4 col-xl-4 col-mm-12 col-sm-12"
+      *ngFor="let item of categoryList"
+    >
+      <a href="javascript:void(0)">
+        <img
+          src="{{ item.imageURL }}"
+          alt="Phone"
+          title="Phone"
+          width="100%"
+          height="250px"
+        />
+      </a>
+      <h2>{{ item.productName }}</h2>
+      <span> {{ item.price }} </span>
+      <button class="primary-btn btns">Add to Card</button>
+      <div class="product-description">
+        <h2>{{ item.productName }}</h2>
+        <p>
+          {{ item.description }}
+        </p>
+        <div class="width-100 mar-bot-10">
+          <label>
+            Quantity :
+          </label>
+          <input type="number" class="quantity" placeholder="Quantity">
+        </div>
+ 
+        <button class="primary-btn btns">Add to Card</button>
+      </div>
+    </div>
+  </div>
+  <!-- !Product List  -->
+  <!-- No data found -->
+  <div class="flex-center" *ngIf="categoryList?.length == 0">
+    <div class="no-data">
+      <p class="mar-bot-5">No Data Found</p>
+      <h1 class="mar-bot-0">
+        Need Help ? Please
+        <a (click)="goToContactPage()" href="javascript:void(0)">Contact</a>
+      </h1>
+    </div>
+  </div>
+  <!-- !No data found -->
+</div>
+
+<!-- !Product Page  -->

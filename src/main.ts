@@ -5,6 +5,7 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http'
 import { bootstrapApplication } from '@angular/platform-browser'
 import { AppComponent } from './app/app.component'
 import { BrowserAnimationsModule, provideAnimations } from '@angular/platform-browser/animations'
+import 'zone.js/dist/zone';
 
 bootstrapApplication(AppComponent, {
   providers: [

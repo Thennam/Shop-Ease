@@ -2,7 +2,7 @@
 export const productList = [
   {
     id: 1,
-    productName: 'apple',
+    productName: 'iphone 11',
     price: '$400',
     imageURL: 'assets/images/iphon-1.jpg',
     category: 'mobile',
@@ -10,7 +10,7 @@ export const productList = [
   },
   {
     id: 2,
-    productName: 'apple',
+    productName: 'iphone 12',
     price: '$500',
     imageURL: 'assets/images/iphone-2.jpg',
     category: 'mobile',
@@ -18,7 +18,7 @@ export const productList = [
   },
   {
     id: 3,
-    productName: 'apple',
+    productName: 'iphone 13',
     price: '$600',
     imageURL: 'assets/images/iphone-3.jpg',
     category: 'mobile',
@@ -26,7 +26,7 @@ export const productList = [
   },
   { 
     id: 4,
-    productName: 'apple',
+    productName: 'iphone 14',
     price: '$550',
     imageURL: 'assets/images/iphone-4.jpg',
     category: 'mobile',
@@ -34,7 +34,7 @@ export const productList = [
   },
   {
     id: 5,
-    productName: 'apple',
+    productName: 'iphone 15',
     price: '$500',
     imageURL: 'assets/images/iphone-5.jpg',
     category: 'mobile',
@@ -42,7 +42,7 @@ export const productList = [
   },
   {
     id: 6,
-    productName: 'apple',
+    productName: 'iphone 11',
     price: '$500',
     imageURL: 'assets/images/iphone-6.jpg',
     category: 'mobile',
